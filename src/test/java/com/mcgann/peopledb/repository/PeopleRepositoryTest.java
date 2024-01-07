@@ -25,7 +25,7 @@ public class PeopleRepositoryTest {
 
     @BeforeEach
     void setUp() throws SQLException {
-        connection = DriverManager.getConnection("jdbc:h2:C:\\Users\\micha\\DBeaver_DataBase\\people");
+        connection = DriverManager.getConnection("PUT DATABASE PATH HERE");
         connection.setAutoCommit(false);
         repo = new PeopleRepository(connection);
     }
